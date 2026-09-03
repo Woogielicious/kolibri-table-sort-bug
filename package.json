@@ -1,0 +1,30 @@
+{
+  "name": "kolibri-table-sort-bug",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Minimal-Repro: KolTableStateful verliert die Sortierung, sobald der _headers-Prop neu zugewiesen wird (z. B. durch ein Re-Render beim ersten Scrollen).",
+  "scripts": {
+    "prepare-assets": "node scripts/copy-icons.mjs",
+    "postinstall": "node scripts/copy-icons.mjs",
+    "dev": "npm run prepare-assets && vite",
+    "build": "npm run prepare-assets && tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@public-ui/components": "4.2.1",
+    "@public-ui/react": "4.2.1",
+    "@public-ui/theme-default": "4.2.1",
+    "adopted-style-sheets": "1.1.9-rc.22",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "18.3.29",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "4.3.4",
+    "typescript": "5.9.3",
+    "vite": "5.4.11"
+  }
+}
